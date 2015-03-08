@@ -72,7 +72,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Prague + 1'
+TIME_ZONE = 'Europe/Prague'
 
 USE_I18N = True
 
