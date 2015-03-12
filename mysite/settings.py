@@ -87,4 +87,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-ADMIN_MEDIA_PREFIX = '/static/admin/' 
+STATIC_ROOT = 'static' 
