@@ -24,9 +24,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = [
-    'www.mydjangosite.com',
-]
+ALLOWED_HOSTS = ['.example.com']
 
 
 # Application definition
