@@ -88,4 +88,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = 'static'
 
-ADMIN_MEDIA_PREFIX = '/static/'
+ADMIN_MEDIA_PREFIX = '/media/admin/'
