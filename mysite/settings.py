@@ -89,3 +89,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 
 ADMIN_MEDIA_PREFIX = '/static/'
+
+STATICFILES_DIRS = ('<%= node['geoq']['virtualenv']['location'] %>/local/lib/python2.7/site-packages/django/contrib/admin/static/',)
