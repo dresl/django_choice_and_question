@@ -86,6 +86,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "/var/www/192.168.50.4/static/"
+STATIC_ROOT = 'static'
 
 ADMIN_MEDIA_PREFIX = '/static/admin/'
