@@ -86,7 +86,7 @@ USE_TZ = True
 
 ADMIN_MEDIA_PREFIX = '/static/'
 
-STATIC_ROOT = '/root/mysite/polls/static/'
+STATIC_ROOT = '/root/mysite/polls/static/admin/'
 
 STATIC_URL = '/static/'
 
