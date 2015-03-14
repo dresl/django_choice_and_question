@@ -87,3 +87,13 @@ USE_TZ = True
 STATIC_ROOT = '/root/mysite/mysite/static/'
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    # location of your application, should not be public web accessible 
+    '/root/mysite/mysite/static/',
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
