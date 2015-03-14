@@ -86,7 +86,7 @@ USE_TZ = True
 
 ADMIN_MEDIA_PREFIX = '/static/'
 
-STATIC_ROOT = '/root/mysite/mysite/'
+STATIC_ROOT = '/root/mysite/mysite/static/'
 
 STATIC_URL = '/static/'
 
