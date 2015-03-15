@@ -4,7 +4,6 @@ from polls.models import Choice, Question
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
-    search_fields = ['question_text']
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -13,7 +12,7 @@ class QuestionAdmin(admin.ModelAdmin):
     ]
     inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date', 'was_published_recently')
-    list_filter = ['pub_date']
+    list_filter = ['pub_date','question_text']
     search_fields = ['question_text']
 
 admin.site.register(Question, QuestionAdmin)
