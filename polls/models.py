@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('Datum publikovani')
+    pub_date = models.DateTimeField('date published')
     def __unicode__(self):              # __unicode__ on Python 2 ; __str__ on Python 3
         return self.question_text
 
