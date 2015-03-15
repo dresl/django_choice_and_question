@@ -84,18 +84,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+#ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-STATIC_ROOT = '/root/mysite/polls/static/admin/'
+#STATIC_ROOT = '/root/mysite/polls/static/admin/'
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
+#STATICFILES_DIRS = (
     # location of your application, should not be public web accessible 
-    '/root/mysite/mysite/static/',
-)
+    #'/root/mysite/mysite/static/',
+#)
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
+#STATICFILES_FINDERS = (
+    #'django.contrib.staticfiles.finders.FileSystemFinder',
+    #'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#)
