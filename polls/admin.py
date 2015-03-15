@@ -4,6 +4,7 @@ from polls.models import Choice, Question
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
+    search_fields = ['question_text']
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
