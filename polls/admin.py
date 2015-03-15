@@ -4,7 +4,7 @@ from polls.models import Question
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,               {'fields': ['question_text']}),
-        ('Other information', {'fields': ['pub_date']}),
+        ('Date information', {'fields': ['pub_date']}),
     ]
 
 admin.site.register(Question, QuestionAdmin)
