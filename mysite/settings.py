@@ -88,7 +88,7 @@ USE_TZ = True
 
 #STATIC_ROOT = '/root/mysite/polls/static/admin/'
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
 #STATICFILES_DIRS = (
     # location of your application, should not be public web accessible 
