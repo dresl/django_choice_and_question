@@ -4,6 +4,7 @@ from polls.models import Choice, Question
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
+    inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date', 'was_published_recently')
 
 class QuestionAdmin(admin.ModelAdmin):
