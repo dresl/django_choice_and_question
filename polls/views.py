@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template import RequestContext, loader
-
 from polls.models import Question
+from django.shortcuts import render
 
 
 def index(request):
