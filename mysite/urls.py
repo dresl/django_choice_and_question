@@ -5,5 +5,5 @@ from django.http import *
 urlpatterns = patterns('',
     url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^home', HttpResponse("You're voting on question")),
+    url(r'^home/', include('polls.urls')),
 )
