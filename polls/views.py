@@ -8,7 +8,7 @@ from polls.models import Choice, Question
 
 def home(request):
 	template = loader.get_template('home.html')
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
