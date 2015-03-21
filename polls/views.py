@@ -7,7 +7,7 @@ from django.utils import timezone
 from polls.models import Choice, Question
 
 def home(request):
-	template = loader.get_template('polls/index.html')
+	template = loader.get_template('home.html')
     return HttpResponse(template)
 
 class IndexView(generic.ListView):
