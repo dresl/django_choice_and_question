@@ -7,8 +7,12 @@ from django.utils import timezone
 from polls.models import Choice, Question
 
 def home(request):
-	template = loader.get_template('home.html')
-    return render(request, 'home.html')
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('home.html')
+    context = RequestContext(request, {
+        'latest_question_list': latest_question_list,
+    })
+    return HttpResponse(template.render(context))
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
