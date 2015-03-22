@@ -7,9 +7,3 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
-
-{% for choice in question.choice_set.all %}
-	{% if choice.votes > 4 : %}
-		{% print "choice.choice_text" %}
-	{% endif %}
-{% endfor %}
