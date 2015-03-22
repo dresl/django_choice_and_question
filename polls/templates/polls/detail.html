@@ -1,4 +1,4 @@
-<h3><a href="{% url 'polls:home' question.id %}">{{ question.question_text }}</a></h3>
+<h3><a href="{% url 'polls:info' question.id %}">{{ question.question_text }}</a></h3>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
