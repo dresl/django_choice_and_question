@@ -6,9 +6,9 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-def welcome(request):
-     p = get_object_or_404(Question, pk=question_id)
-    return HttpResponseRedirect(reverse('polls:welcome', args=(p.id,)))
+class WelcomeView(generic.DetailView):
+    model = Question
+    template_name = 'polls/welcome.html'
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
