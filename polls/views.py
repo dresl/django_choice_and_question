@@ -6,10 +6,6 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-
-def index(request):
-    return HttpResponse("THIS IS INDEX PAGE")
-
     def get_queryset(self):
 	    """
 	    Return the last five published questions (not including those set to be
