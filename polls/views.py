@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.template import *
 from django.views import generic
@@ -7,7 +7,7 @@ from django.utils import timezone
 from polls.models import Choice, Question
 
 def index(request):
-    return HttpResponseRedirect("THIS IS INDEX PAGE")
+    return HttpResponse("THIS IS INDEX PAGE")
 
     def get_queryset(self):
 	    """
