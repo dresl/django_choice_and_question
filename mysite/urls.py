@@ -1,8 +1,7 @@
 from django.conf.urls import *
 from django.contrib import *
 from django.http import *
-
-import polls.views
+import polls.views.welcome
 
 urlpatterns = patterns('',
 	url(r'^$', polls.views.welcome, name="welcome"),
