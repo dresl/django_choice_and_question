@@ -6,8 +6,8 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-#def index(request):
-#   return HttpResponse("THIS IS INDEX PAGE")
+def welcome(request):
+   return HttpResponse("THIS IS INDEX PAGE")
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
