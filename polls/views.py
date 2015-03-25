@@ -6,7 +6,7 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-class WelcomeView(generic.DetailView):
+class WelcomeView(generic.ListView):
     model = Question
     template_name = 'polls/welcome.html'
 
