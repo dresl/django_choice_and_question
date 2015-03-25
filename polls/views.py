@@ -6,7 +6,7 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-def index(request):
+def welcome(request):
     return HttpResponse("THIS IS INDEX PAGE")
 
     def get_queryset(self):
