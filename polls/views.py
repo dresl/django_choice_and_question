@@ -6,9 +6,9 @@ from django.views import generic
 from django.utils import timezone
 from polls.models import Choice, Question
 
-class IndexView(generic.ListView):
-    template_name = 'polls/index.html'
-    context_object_name = 'latest_question_list'
+
+def index(request):
+    return HttpResponse("THIS IS INDEX PAGE")
 
     def get_queryset(self):
 	    """
