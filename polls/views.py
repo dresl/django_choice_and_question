@@ -9,6 +9,10 @@ from polls.models import Choice, Question
 #def index(request):
 #   return HttpResponse("THIS IS INDEX PAGE")
 
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
+
     def get_queryset(self):
 	    """
 	    Return the last five published questions (not including those set to be
