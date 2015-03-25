@@ -7,7 +7,7 @@ from django.utils import timezone
 from polls.models import Choice, Question
 
 def welcome(request):
-    return HttpResponseRedirect(reverse('polls:welcome',))
+    return HttpResponseRedirect(reverse('polls:welcome', args=(p.id,)))
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
